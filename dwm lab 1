@@ -1,0 +1,221 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP6g8d6s83tKvwKkYGmbIpP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/22pa5a6101/Dwm-lab/blob/main/dwm%20lab%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "x=np.array([1,2,3,])\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9snizOUbjX4G",
+        "outputId": "09a96a50-aecb-4a58-a365-46c8cc206d6e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "y=np.array([[1,2,3],[4,5,6,]])\n",
+        "print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fC_9zGB1lQU2",
+        "outputId": "dae52e50-6a7c-4902-9e22-7b9b5168b000"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "np.arange( 10, 30, 5 )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bkfn-Y0im_R2",
+        "outputId": "a83a6463-0543-4aac-cf6b-d6545a672879"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([10, 15, 20, 25])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "b=np.append(x,[6,4])\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-xXkqwR4swn9",
+        "outputId": "5a4f54dc-68ed-4f4f-e858-a2ba71ad31f4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 6 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "print(\"the elements before x deleteing\",x)\n",
+        "newarray=np.delete(x,2)\n",
+        "print(\"the elements after xdeleting\",newarray)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VWmjJHPutFGR",
+        "outputId": "7acbf14f-c7a3-421f-99ce-674988521d84"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the elements before x deleteing [1 2 3]\n",
+            "the elements after xdeleting [1 2]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "b=np.array([1,2,3,4,5,6,7,8,9])\n",
+        "b[b<5]=-2\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YgbXM55iuD3C",
+        "outputId": "b651a759-4eab-4c2b-eecd-64b54188a0a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[-2 -2 -2 -2  5  6  7  8  9]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "import numpy as np\n",
+        "b=np.array([11,12,13,14,15])\n",
+        "b=np.arange( 5 )\n",
+        "print(\"the elements in a are\",a)\n",
+        "print(\"the elements in b are\",b)\n",
+        "\n",
+        "print(\"results of addition\",a+b)\n",
+        "print(\"results of subraction\",a-b)\n",
+        "print(\"results of multiplication\",a*b)\n",
+        "print(\"results of division\"a/b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 130
+        },
+        "id": "YDDABet7u6LC",
+        "outputId": "bfcf1efa-4ef2-4bd2-e96f-043bbac018de"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-37-fcc0c537c1f2>\"\u001b[0;36m, line \u001b[0;32m10\u001b[0m\n\u001b[0;31m    print(\"results of division\"a/b)\u001b[0m\n\u001b[0m                               ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
